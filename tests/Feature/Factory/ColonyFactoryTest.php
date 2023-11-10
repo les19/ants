@@ -4,8 +4,6 @@ namespace Tests\Feature\Factory;
 
 use Database\Factories\ColonyFactory;
 use Illuminate\Database\QueryException;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class ColonyFactoryTest extends TestCase
