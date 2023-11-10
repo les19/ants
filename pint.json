@@ -1,0 +1,18 @@
+{
+    "preset": "psr12",
+    "rules":{
+        "array_indentation": true,
+        "trailing_comma_in_multiline": true,
+        "phpdoc_align": true,
+        "align_multiline_comment": true,
+        "blank_line_after_namespace": true,
+        "whitespace_after_comma_in_array": true,
+        "binary_operator_spaces" : {
+            "operators" : {
+                "=": "single_space",
+                "=>": "align",
+                "+=": "align_single_space"
+            }
+        }
+    }
+}
