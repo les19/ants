@@ -35,7 +35,8 @@ jobs:
           delete-branch: true
           title: '[Pint] Update style'
 
-      - name: Enable Pull Request Automerge
-        run: gh pr merge --merge --auto "1"
+      - name: Auto approve
+        if: steps.cpr.outputs.pull-request-operation == 'created'
+        run: gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ secrets.PAT }}
