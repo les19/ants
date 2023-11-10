@@ -4,8 +4,6 @@ namespace Tests\Feature\Factory;
 
 use App\Models\Colony;
 use Database\Factories\AntFactory;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class AntFactoryTest extends TestCase
