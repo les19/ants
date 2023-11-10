@@ -18,7 +18,7 @@ class AntFactory extends Factory
     public function definition(): array
     {
         return [
-            'uuid' => $this->faker->uuid(),
+            'uuid'      => $this->faker->uuid(),
             'colony_id' => $this->firstOrCreateColonyId(),
         ];
     }
